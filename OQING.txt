@@ -1,0 +1,133 @@
+KOINOT 2.6 → 2.24 — FAQAT YANGILANISH (2.7 – 2.24 birga)
+
+O‘RNATISH
+1. Eski KOINOT papkasidan zaxira nusxa oling. Chrome oynasini yoping.
+2. ZIP ichidagi KOINOT papkasini eski KOINOT ustiga ko‘chiring («Replace the files in the destination»).
+   2.7 – 2.11 dan birini qo‘ygan bo‘lsangiz ham shu ZIP ni ustidan qo‘ya bering.
+3. index.html ni Chrome’da oching, Ctrl+Shift+R.
+
+2.24 YANGILIKLARI
+- Nishonlar: o‘lchangan / hisoblangan / taxminiy / simulyatsiya (chap tomonda chiplar, bosing). Haqiqiy masshtab: Menyu → «Haqiqiy ⇄ ko‘rgazmali masshtab». Telefon ko‘rinishi tuzatildi.
+
+2.23 YANGILIKLARI
+- Asosiy asteroid kamari (MPC MPCORB, 1,52 mln asteroid) — «Asosiy kamar (MPC)» bo‘limi va sayohatda. Sifat darajalari: Yengil ≈25 ming / O‘rta ≈200 ming / Yuqori hammasi (Sozlamalar → Grafika sifati). Papka: data/mainbelt/ (≈35 MB).
+
+2.22 YANGILIKLARI
+- 🎬 Kino rejimi (menyu): yozuv va tugmasiz, musiqa bilan kamera yulduzlar orasida suzib yuradi (Quyosh tizimi → Kosmik to‘r → qaytish). Chiqish: Esc yoki ikki marta bosish.
+
+2.21 YANGILIKLARI
+- HD teksturalar (js/texturesplus.js, assets/textures/hd/): Yer 4K + relyef + okean yaltirashi; Oy 4K; Mars 4K + NASA MOLA balandligidan relyef; Pluton (New Horizons); Yevropa, Ganimed (Voyager/Galileo); Titan (Cassini infraqizil xaritasi — rangi taxminiy). Yangi yo‘ldoshlar: Io va Kallisto.
+- Teksturalar sahifa ochilgach orqa fonda yuklanadi (jami ≈ 10 MB, bir necha soniya); «Grafika sifati: Yengil» da yuklanmaydi. Sayohatdagi sayyora nusxalari ham yangilanadi.
+- Cheklovlar: Ganimed, Kallisto, Yevropa, Io xaritalari past ruxsatli (1–1,4K) — yaqindan xira ko‘rinadi. Serera, Eris, Haumea, Makemake «fictional» — ishlatilmadi. Venera: bulut qatlami saqlandi. Oy relyefi (CGI Moon Kit) paketda yo‘q edi. Faqat Chromium (SwiftShader) da ko‘rilgan; GPU xotirasi Yer+Oy+Mars uchun ≈ 150 MB oshadi.
+- Manbalar va litsenziyalar yangilandi (docs va «Manbalar» bo‘limi).
+
+2.20 YANGILIKLARI
+- «Tumanlik fon» endi alohida yoqiladi/o‘chiriladi: Sozlamalar bo‘limida va asosiy menyuda (Asboblar). «Kino effektlari (bloom)» ham alohida.
+- Musiqa va ovoz (js/audio.js): fon musiqasi uzluksiz yangrab turadi; sayyora, Sayohat bosqichi, galaktika va yulduz uchun alohida ovoz yumshoq o‘tib kiradi. Fayl bo‘lmasa — ilovaning o‘z generativ musiqa va ovozlari (kod bilan). Sozlamalarda yoqish/o‘chirish va balandlik; asosiy menyuda «Musiqa» va «Ovoz (obyektlar)» tugmalari.
+- audio/ papkasi: music/ (music1.mp3, music2.mp3 …), ambient/ (earth.mp3, jupiter.mp3, stage3.mp3, galaxy_andromeda.mp3 …) va audio-config.js. Batafsil: audio/OQING.txt.
+- Cheklov: brauzer tovushni faqat birinchi bosishdan keyin boshlaydi. Fayl ovozlari file:// rejimida oddiy audio sifatida chaladi (MP3 tavsiya). Kosmosda ovoz tarqalmaydi — badiiy tovushlar. Sinov Chromium'da, haqiqiy karnay/quloqchinda eshitib ko‘rilmagan — balandlik va ta’mni o‘zingiz sozlang.
+
+2.19 YANGILIKLARI
+- Sayohat «kino» effektlari (js/journeyfx.js): protsedur tumanlik (gaz-chang bulutlari; bosqichga qarab rangi va yorqinligi o‘zgaradi), bloom (yorug‘lik tarqalishi), yorqin yulduzlarda xoch shaklidagi nur, vignetka va yengil rang grading.
+- Tumanlik — badiiy fon: kod bilan hosil qilingan, haqiqiy kosmik surat emas va kuzatuv ma’lumoti emas. Katta masshtabli bosqichlarda (Laniakea va undan keyin) ataylab juda xira qilingan.
+- O‘chirish: asboblar menyusida «Kino effektlari (Sayohat)» yoki «Grafika sifati: Yengil» (FPS past bo‘lsa avtomatik o‘chadi).
+- Cheklov: faqat Chromium (SwiftShader) da sinalgan; haqiqiy video kartada tezlik boshqacha bo‘lishi mumkin.
+
+2.18 YANGILIKLARI
+- «Kichik jismlar (MPC)»: tanlangan jism uchun Osmon xaritasidagi joyingizdan balandligi, azimuti, tungi ko‘rinish oynasi va taxminiy yorqinligi; «Yaqin o‘tishlar (PHA, kelasi 10 yil)» ro‘yxati (Kepler hisobi; masalan 1999 AN10, 2027-08-07, ≈1 Oy masofasi). Aniq sana uchun NASA CNEOS ga qarang.
+- Sayohat: bosqichlar orasida uchishda yuqorida «→ bosqich nomi» sarlavhasi chiqadi va kameraning ko‘rish burchagi tezlikka qarab kengayadi.
+- Yangi bo‘limlar: «Ufqdan narida» (Ma’lum / Taxmin / Faraz belgilari bilan) va «Manbalar» (litsenziyalar); menyuda ham bor. docs/MANBALAR_VA_LITSENZIYALAR.md to‘ldirildi.
+- Fayllar: js/info.js (yangi), js/smallbodies.js, js/journeyplus.js, js/skymap.js, js/ui.js, css/extras.css.
+
+2.17 YANGILIKLARI
+- «Kichik jismlar (MPC)» yangi laboratoriya bo‘limi: Minor Planet Center'ning haqiqiy orbital elementlari — 50 061 asteroid/TNO (2 367 PHA, 39 691 NEA, 961 kentavr, 7 042 transneptun) va 942 kometa. Ekliptika tekisligi, tepadan; masshtab, siljitish, sana siljitgichi (±10 yil) va ▶ harakat, filtrlar, qidiruv (Apophis, Halley…), jism ma’lumoti va orbitasi, «hozir Yerga eng yaqin» ro‘yxati.
+- Sayohat, «Quyosh sistemasi» bosqichi: ~14 000 HAQIQIY jism (barcha PHA, NEA namunasi, kentavrlar, TNO) bugungi sana bo‘yicha; masofa sayyora orbitalari bo‘yicha siqilgan masshtabda (burchaklar ekliptik, lekin sayyoralar sahnada haqiqiy joyida emas). Asosiy kamar sxematik qoladi.
+- Fayl: data/smallbodies.js (1,8 MB), js/smallbodies.js.
+- Cheklovlar: joy oddiy Kepler hisobi bilan topiladi (planetalar ta’siri yo‘q); asosiy asteroid kamaridagi ~million oddiy asteroid bu to‘plamda yo‘q; ma’lumot — suratdir; faqat Chromium'da sinalgan.
+- Manba: Minor Planet Center (minorplanetcenter.net) ochiq ma’lumotlari.
+
+2.16 YANGILIKLARI
+- OSMON XARITASI KATTALASHTIRILDI: dialogda kattaroq; "⛶ Katta ekran" tugmasi butun ekranga yoyadi; chap menyudagi "🌌 Osmon xaritasi (katta ekran)" to'g'ridan-to'g'ri katta rejimni ochadi. Oynaning o'lchami o'zgarsa xarita qayta chiziladi.
+- SAYOHAT: sahnalar ekranni yaxshiroq to'ldiradi (bosqichlar bo'yicha kamera masofasi moslashtirildi; Mahalliy guruh ~1,7 marta kattaroq, Quyosh sistemasi va Somon Yo'li ham yirikroq).
+- SAYOHAT, Yer va Quyosh sistemasi bosqichlari: orqa fonda HAQIQIY osmon — ≈5000 yulduz, turkum chiziqlari va Messier obyektlari (M31, M42, M45 va boshqalar nomi bilan), ekliptika koordinatalarida. Orion tarmog'idan keyin ko'rinmaydi (yo'nalishlar ma'nosini yo'qotadi).
+- SAYOHAT, Quyosh sistemasi: asteroid kamari va Kuiper kamari (zarralar; vizual taqsimot, haqiqiy asteroidlar emas).
+- Cheklov: Chromium'da sinalgan; real videokartada tezlik va boshqa brauzerlar tekshirilmagan; kamera koeffitsiyentlari ko'z bilan moslangan (ekran nisbati juda boshqacha bo'lsa chetlar qirqilishi mumkin).
+
+2.15 YANGILIKLARI
+- OSMON XARITASI (Laboratoriya → Osmon xaritasi) endi to'liqroq: 6-kattalikkacha ≈ 5000 yulduz, 88 turkum chiziqlari va nomlari (burj nomlari: Hamal, Savr, Javzo...), 109 Messier obyekti va 596 gacha NGC/IC (yorqinligi ≤10,2).
+- Messier obyektlari (galaktika, to'da, tumanlik) turiga qarab belgilanadi, bosganda ma'lumot chiqadi. Faqat osmon qorong'u bo'lganda ko'rinadi (Quyosh −9° dan past).
+- Yulduz koordinatalari endi sana ekvatoriga o'tkazilgan (presessiya): oldingi versiyada yulduzlar ≈0,3° siljib turardi, sayyoralar bilan mos kelmasdi. Hisob Astronomy Engine bilan solishtirilib, to'g'ri chiqdi.
+- MANBALAR: yulduzlar va turkumlar — d3-celestial (Olaf Frohn, BSD-3; Hipparcos/Tycho asosida). Chuqur osmon — OpenNGC (CC-BY-SA 4.0, manba ko'rsatilishi shart).
+- Cheklov: Somon Yo'li polosasi chizilmagan; yulduzlar uchun atmosfera sinishi hisobga olinmagan (ufq yaqinida ≈0,5° gacha); Messier/NGC nomlari asosan inglizcha (faqat M31, M42, M45 o'zbekcha).
+
+2.14 YANGILIKLARI
+- QOVUN MODELI (Laboratoriya → "Qovun modeli"): Quyosh = ~44 sm qovun, Yer = 4 mm chumoli, butun Quyosh sistemasi bitta masshtabda (1 : 3,2 mlrd).
+- G'ildirak bilan yaqinlashish/uzoqlashish, sudrab siljitish, obyektga bosing (ma'lumot), ikki marta bosing (uchib borish). Tayyor ko'rinishlar: qovun va odam, Yer-chumoli, Yer va Oy, ichki sayyoralar, Neptun/Pluton, Proksima Kentavra (12,6 km).
+- Har bir sayyora o'lchamdosh buyum bilan ko'rsatiladi (Yupiter — ping-pong to'pi, Saturn — yong'oq, Uran/Neptun — uzum va h.k.); katakchani o'chirsangiz sayyora ko'rinishi chiqadi.
+- O'lchov uchun odam (1,75 m), Toshkent teleminorasi (375 m), futbol maydoni, asteroid kamari. Masofalar qadam va piyoda vaqti bilan.
+- Cheklov: orbitalar ellips, masofalar o'rtacha (katta yarim o'q); buyum rasmlari taxminiy; Chromium (dasturiy WebGL) da sinalgan.
+
+2.13 YANGILIKLARI
+- KUZATILADIGAN KOINOT (Sayohat → 8-bosqich): z = 0,5 / 1 / 2 / 6 / 10 / 14,4 / 1100 uchun masofa qobiqlari (astropy, Planck 2018 hisobi), gorizont ≈ 46,2 mlrd y.y.
+- Kosmik mikroto‘lqin foni (KMF) sferasi: CAMB (Planck 2018) spektridan SIMULYATSIYA qilingan xarita, haqiqiy Planck xaritasi emas. Yoqish/o‘chirish katakchasi bor.
+- Cheklov: kuzatiladigan koinot butun koinot emas; z≈14,4 (JWST rekordi) o‘zgarishi mumkin. Faqat Chromium/SwiftShader da sinalgan.
+
+2.12 YANGILIKLARI
+- ASTEROID KAMARI ENDI AYLANADI: Mars va Yupiter orasidagi 850 asteroid Kepler qonuni bo‘yicha (davr = 365,25·a^1,5 kun) o‘z tezligida harakatlanadi
+  va sekin aylanadi. Vaqt planetalar bilan bir xil («Boshlash/Vaqt tezligi» bilan boshqariladi, sana rejimida ham mos keladi). Avval u qotib turgan edi.
+- KOSMIK TO‘R (Sayohat → 7-bosqich) — fizik simulyatsiya: ΛCDM (Ωm 0,31; h 0,68; σ8 0,81) Gauss maydoni + Zel‘dovich yaqinlashuvi, 82 000 zarracha,
+  filamentlar, zich tugunlar va bo‘shliqlar; ichida Laniakea o‘lchamidagi sfera (≈ 160 Mpk) va simulyatsiya chegarasi. Obyekt tanlash paneli.
+  Bu bizning koinotning xaritasi EMAS (u «haqiqiy» emas, tasodifiy realizatsiya) — ekranda ham shunday yozilgan.
+- Yangi fayllar: data/cosmicweb.js (≈ 770 KB), js/cosmicweb.js. O‘zgargan: js/scene.js (asteroidlar).
+
+2.11 YANGILIKLARI
+- LANIAKEA (Sayohat → 6-bosqich) endi haqiqiy galaktikalar xaritasi: 2MRS (2MASS Redshift Survey, Huchra+ 2012) ning 37 086 galaktikasi.
+  Har nuqta — bitta galaktika, katalogdagi yo‘nalishda; masofa = qizil siljish (CMB sistemasida) ÷ 70 km/s/Mpk. Klasterlar (Virgo, Fornax, Hydra,
+  Centaurus, Norma = Buyuk Tortuvchi tomon, Perseus, Coma), bo‘shliqlar va Somon Yo‘li ortidagi «qochish zonasi» ko‘rinadi.
+  Mahalliy guruhning CMB ga nisbatan harakati (≈ 620 km/s) o‘q bilan, masofa halqalari (50/100/150 Mpk) galaktik tekislikda. Obyekt tanlash paneli.
+- Ma‘lumot: data/laniakea.js (≈ 400 KB, ikkilik siqilgan), kod: js/laniakea.js. M87* belgisi Virgo klasteri markaziga ko‘chirildi.
+
+2.10 YANGILIKLARI
+- MAHALLIY GURUH (Sayohat → 5-bosqich) endi haqiqiy ma‘lumot asosida: Somon Yo‘li, Andromeda (M31), Uchburchak (M33) va
+  117 ta tasdiqlangan galaktika (Somon Yo‘li yo‘ldoshlari — Magellan bulutlari, Fornax, Draco...; Andromeda yo‘ldoshlari — M32, NGC 205...;
+  yaqin qo‘shnilar — NGC 6822, IC 1613, WLM, Sextans A/B, NGC 3109...). Har biri katalogdagi yo‘nalish va Yerdan masofada turadi.
+  Ma‘lumot paneli (ⓘ) da galaktika tanlash: masofa (Yerdan va Somon Yo‘li markazidan), yorqinlik, gaz. M31 qiyaligi (77°) va M33 yo‘nalishi hisobga olingan.
+- Manba: Local Volume Database (Pace 2024, ochiq GitHub katalogi) — data/localgroup.js. Yangi fayl: js/localgroup.js.
+- Andromeda bilan to‘qnashuv haqida so‘nggi (2025) baho paneldа yozilgan: ≈ 10 mlrd yilda qo‘shilish ehtimoli ≈ 50%.
+
+2.9 YANGILIKLARI
+- CHAP MENYU: chap tomondagi «Obyektlar katalogi» tagida yangi ≡ tugma («Asboblar va yozuvlar»). Ichida:
+  Laboratoriya, Erkin parvoz, Qayerdaman?, Qora tuynuk, Skrinshot, Havola, Til (UZ/RU/EN) va 3 ta o‘chirgich:
+  Masofa ko‘rsatkichi, Yozuvlar (sarlavha/izohlar), Vizual effektlar. Telefonda — «Menyu» tugmasi. Sozlama saqlanadi.
+- «YERDAN MASOFA» ko‘rsatkichi endi eng tepada; × bilan yashiriladi, menyudan qaytariladi.
+- QORA TUYNUK (Laboratoriya → «Qora tuynuk»): gravitatsion linzalash va akkretsion diskli 3D simulyatsiya (sudrang,
+  qiyalik/masofa), Sagittarius A*, M87*, Cygnus X-1, Gaia BH1 + gipotetik 1 va 10 M☉; massa, r_s, koinotdagi o‘rni
+  (turkum, yorug‘lik yili, hozir Toshkentdan balandligi). Osmon xaritasida ham qora tuynuk yo‘nalishlari belgilanadi.
+  Virgo klasteri (M87*) Laniakea bosqichida belgilangan.
+- VIZUAL EFEKTLAR: uchib o‘tuvchi yulduzlar, Sayohatda tezlik chiziqlari, Quyosh nuri (flare), qirralar qorayishi.
+
+HALOL ESLATMA
+- Kosmik to‘r: Zel‘dovich yaqinlashuvi umumiy tuzilmani beradi, lekin klasterlarning ichki tuzilishini (to‘liq N-tana simulyatsiyasi kabi) bermaydi; quti 512 Mpk davriy, bitta tasodifiy realizatsiya.
+  Bu bosqichda 1 birlik = 8 Mpk; Sayohatdagi o‘tish animatsiyasi masshtabi ko‘rgazmali. Asteroid kamari modeli soddalashtirilgan (aylana orbitalar, haqiqiy eksSentrisitet yo‘q).
+- Laniakea: 2MRS yorqinlik bo‘yicha cheklangan (K < 11,75), shuning uchun uzoqda zichlik kamayadi — bu haqiqiy bo‘shliq emas. Masofa qizil siljishdan (xususiy tezliklar xatosi bor);
+  «Fingers of God» FoF guruhlash bilan siqilgan; ≈ 9 Mpk gacha guruhsiz galaktikalar ko‘rsatilmagan; > 200 Mpk kesilgan. Laniakea chegarasi chizilmagan (tezlik maydoni kerak).
+  Shapley superklasteri belgisi adabiyotdagi taxminiy joyda (2MRS da bu masofada ma‘lumot siyrak).
+- Mahalliy guruhda galaktikalar o‘lchami ≈ 8×, yo‘ldoshlarning o‘z galaktikasidan masofasi ≈ 3× kattalashtirilgan (aks holda ko‘rinmaydi);
+  galaktikalar orasidagi masofalar haqiqiy. M31/M33 spiral shakli taxminiy, yulduzlar soni ramziy. Faqat «Kuzatiladigan koinot» bosqichi hali eski sxematik tasvirda.
+- Qora tuynuk simulyatsiyasi aylanmaydigan (Shvartsshild) model; fotosurat emas, haqiqiy EHT tasvirlari farq qiladi.
+  GPU zaif bo‘lsa «Sifat» ni Yengil qiling. Qora tuynuk ko‘z bilan ko‘rinmaydi — osmon xaritasida faqat yo‘nalish.
+- Masofa ko‘rsatkichi masshtab ko‘rsatkichi (kamera real tezlikda uchmaydi). Somon Yo‘li — modelga asoslangan badiiy tasvir.
+- Teksturalar 2K (4K yo‘q). RU/EN faqat interfeys. Chromium (SwiftShader) da tekshirilgan; haqiqiy GPU/boshqa brauzerlarda emas.
+
+2.25: 'Bugun osmonda' tabi, Kino rejimini videoga yozish (menyu), fayl yaxlitligi xabari. Yangilashda BUTUN papkani ustiga ko'chiring.
+2.26: Galaktikalar atlasi va ekzosayyora tizimlari (menyu: 🌀 va 🪐). Yangilashda BUTUN papkani ustiga ko'chiring.
+2.27: Teleskop bo'limi va qizil tungi rejim (menyu: 🔭 va 🔴). Yangilashda BUTUN papkani ustiga ko'chiring.
+2.28: internet ixtiyoriy qatlami (ob-havo, galaktika suratlari, NASA yangilash). Menyu: 🌐 bilan yoqib/o'chiriladi.
+2.29: Jonli ma'lumot (Quyosh faolligi, ISS, kometalar) — menyu ☀. Internet kerak.
+2.30: Teleskop budilnigi (menyu ⏰). Brauzer ochiq turishi kerak.
+2.31: Teleskop → Tun yo‘li va Ro‘yxat (Messier); Ulug‘bek osmoni; Yulduz hayoti; Viktorina 80 savol; kalendarga ⏰.
+2.32: Menyu guruhlarga bo‘lindi + qidiruv + oxirgi ishlatilganlar; laboratoriyada guruhlar va qidiruv.
+Windows: ish stoli yorlig'i uchun KOINOT_yorliq_yaratish.bat ni ikki marta bosing (YORLIQ_QOLLANMA.txt).
+2.33: Kino rejimi yumshatildi; RU/EN tarjimalar kengaytirildi; music1.mp3; dasturchi/donat bloki.
+2.34: emojilar o‘rniga SVG ikonkalar (js/icons.js).
+2.35: sarlavha «Cheksiz koinot», JS izohlari olib tashlandi.

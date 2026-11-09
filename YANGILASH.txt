@@ -1,0 +1,23 @@
+KOINOT 2.2 — FAQAT YANGILANISH
+
+KERAKLI OLDINGI VERSIYA: KOINOT 2.1 Orion
+(KOINOT_3D_Atlas_v2_1_Orion.zip).
+Bu mustaqil to‘liq dastur emas.
+
+O‘RNATISH (WINDOWS)
+1. Oldingi KOINOT papkangizdan zaxira nusxa oling.
+2. Chrome’dagi KOINOT oynasini yoping.
+3. Ushbu ZIP’ni alohida joyga chiqaring.
+4. Ichidagi KOINOT papkasini eski KOINOT papkasi turgan joyga ko‘chiring.
+   Windows almashtirishni so‘rasa “Replace the files in the destination”
+   (Заменить файлы в папке назначения) ni tanlang.
+   Natija KOINOT/index.html bo‘lishi kerak; KOINOT/KOINOT/index.html emas.
+   Eski papkani o‘chirmang: teksturalar va vendor fayllari o‘sha yerda qoladi.
+5. Yangilangan index.html ni Chrome’da oching. Kerak bo‘lsa Ctrl+Shift+R.
+6. SAYOHAT tugmasini bosing va sichqoncha g‘ildiragini pastga aylantiring.
+   Yer → Quyosh sistemasi → Orion → Somon Yo‘li → Mahalliy guruh →
+   Laniakea → kosmik to‘r → kuzatiladigan koinot.
+   Teskari aylantirish bilan qaytasiz. Avtomatik tugmasi ham mavjud.
+
+Katta tuzilmalar taxminiy ko‘rgazmali model, masofalar siqilgan.
+DOM/CPU sinovlari o‘tdi. Haqiqiy Chrome/WebGL tasviri tekshirilmagan.

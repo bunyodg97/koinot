@@ -1,0 +1,15 @@
+KOINOT - ish stoliga yorliq qo'yish (Windows)
+
+1) KOINOT papkasini doimiy joyga qo'ying (masalan D:\KOINOT yoki C:\KOINOT). ZIP ichidan emas, to'liq ochilgan papkadan ishlating.
+2) "KOINOT_yorliq_yaratish.bat" faylini ikki marta bosing.
+   (Windows "Kompyuteringiz himoyalangan" desa: "Qo'shimcha ma'lumot" -> "Baribir ishga tushirish". Fayl ochiq matn, Blokna'tda ochib ko'rishingiz mumkin.)
+3) Ish stolida KOINOT ikonkasi paydo bo'ladi. U Chrome'da (bo'lmasa Edge'da) alohida oynada ochadi: manzil qatori va tablarsiz.
+4) Olib tashlash: "KOINOT_yorliqni_olib_tashlash.bat". Dastur fayllari o'chmaydi.
+
+Eslatmalar
+- Yorliq sizning oddiy Chrome profilingizdan foydalanadi, shuning uchun avval saqlangan sozlamalar, budilnik va jurnal o'z joyida qoladi.
+- Papkani boshqa joyga ko'chirsangiz, yorliq yaratish faylini qayta ishga tushiring. Brauzer ma'lumotlari papka manziliga bog'liq bo'lishi mumkin; shuning uchun ko'chirishdan oldin jurnalning zaxira nusxasini (Teleskop -> Jurnal) saqlab qo'ying.
+- Bu yorliq faqat qulaylik uchun: fayllarni o'zgartirishdan himoya QILMAYDI (himoya uchun keyingi bosqich: o'rnatuvchi + o'zgarish tekshiruvi).
+- Qo'lda yaratish (skript ishlamasa): ish stolida sichqonchaning o'ng tugmasi -> Yaratish -> Yorliq -> manzil:
+  "C:\Program Files\Google\Chrome\Application\chrome.exe" --app="file:///D:/KOINOT/index.html"
+  (D:/KOINOT o'rniga o'z papkangiz manzilini yozing.)

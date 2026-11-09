@@ -1,0 +1,28 @@
+MUSIQA VA OVOZ PAPKASI
+======================
+Ilova fayllar bo‘lmasa ham ovoz chiqaradi (o‘zining kod bilan hosil qilingan musiqa va ovozlari bor).
+O‘z fayllaringizni qo‘ysangiz, ular ustuvor bo‘ladi. Eng ishonchli format — MP3 (OGG, M4A, WAV ham ishlaydi, lekin ro‘yxatga nomi bilan yozish kerak).
+
+1) FON MUSIQASI  →  audio/music/
+   Fayllarni  music1.mp3, music2.mp3, music3.mp3 …  deb nomlang (tartib bilan, bo‘shliqsiz — birinchi yo‘q fayldan to‘xtaydi).
+   Yoki istalgan nom bilan qo‘yib, audio/audio-config.js ichidagi  music:[...]  ro‘yxatiga yozing.
+   Musiqa tugagach keyingisi boshlanadi va hammasi qaytadan aylanadi.
+
+2) OBYEKT OVOZLARI  →  audio/ambient/
+   Obyektga yaqinlashganda yoki bosqichga o‘tganda shu obyektning ovozi yumshoq kirib keladi va aylanib (loop) turadi.
+   Fayl nomi = kalit + .mp3. Kalitlar:
+     Sayyoralar:  sun  mercury  venus  earth  moon  mars  jupiter  saturn  uranus  neptune  pluto
+     Sayohat bosqichlari:  stage0 (Yer)  stage1 (Quyosh sistemasi)  stage2 (Orion tarmog‘i)  stage3 (Somon Yo‘li)
+                            stage4 (Mahalliy guruh)  stage5 (Laniakea)  stage6 (Kosmik to‘r)  stage7 (Kuzatiladigan koinot)
+     Yulduz:  star
+     Galaktikalar:  galaxy_milky  galaxy_andromeda  galaxy_triangulum  galaxy_lmc  …  (umumiy:  galaxy  — hammasi uchun)
+   Misol:  audio/ambient/earth.mp3,  audio/ambient/galaxy_andromeda.mp3
+   Boshqa nom ishlatmoqchi bo‘lsangiz — audio/audio-config.js dagi  ambient:{...}  ga yozing.
+
+3) ESLATMALAR
+   • Faylni qo‘shgach sahifani Ctrl+Shift+R bilan yangilang.
+   • Brauzer ovozni faqat siz sahifani bosganingizdan keyin boshlaydi — bu Chrome qoidasi.
+   • Fayl hajmi kichik bo‘lsin (har biri 1–5 MB). Ovozni o‘zingiz yaratgan yoki litsenziyasi ruxsat bergan fayllardan oling
+     (masalan: CC0 / Pixabay / freesound.org CC0). Litsenziyani docs/MANBALAR_VA_LITSENZIYALAR.md ga yozib qo‘ying.
+   • Kosmosda ovoz tarqalmaydi: bu ovozlar — badiiy sahna, ilmiy yozuv emas.
+   • Ovoz va musiqani Sozlamalar bo‘limida yoki asosiy menyuda (Asboblar) yoqish/o‘chirish mumkin.
